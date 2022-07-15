@@ -2,8 +2,8 @@ name: build c
 on: push
 jobs:
   job1:
-  name: job111
-  runs-on: ubuntu-latest
-  steps:
-  -name: step11
-    run: echo "hello world\n"
+    name: job111
+    runs-on: ubuntu-latest
+    steps:
+    - name: step11
+      run: echo "hello world\n"
