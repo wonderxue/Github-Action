@@ -5,5 +5,15 @@ jobs:
     name: job111
     runs-on: ubuntu-latest
     steps:
-    - name: step11
-      run: echo "hello world\n"
+    - name: checkout
+      uses: actions/checkout@v5
+      with:
+        repository: wonderxue/Github-Action
+        fetch-depth: 0
+        
+    - name: install gcc
+      run: sudo apt install -y gcc
+
+    - name: Compile
+      run: make
+
