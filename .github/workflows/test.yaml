@@ -15,5 +15,5 @@ jobs:
       run: sudo apt install -y gcc
 
     - name: Compile
-      run: make
+      run: make clean && make 
 
